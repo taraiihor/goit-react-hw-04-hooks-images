@@ -18,7 +18,7 @@ const API = {
 };
 
 fetchImage.propTypes = {
-  imageValue: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   page: PropTypes.number.isRequired,
 };
 
