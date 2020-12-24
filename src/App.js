@@ -45,7 +45,7 @@ function App() {
 
     setLoading(true);
 
-    API.fetchImage(images, page)
+    API.fetchArticles(images, page)
       .then(articles => {
         if (articles.hits.length === 0) {
           return Promise.reject(new Error(`такого зображення нема ${images}`));
