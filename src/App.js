@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import { animateScroll as scroll } from 'react-scroll';
 import Loader from 'react-loader-spinner';
 import Searchbar from './components/Searchbar';
 import ImageGallery from './components/ImageGallery';
@@ -56,6 +57,7 @@ function App() {
         setError(error);
       })
       .finally(() => setLoading(false));
+    scroll.scrollToBottom();
   }, [images, page]);
 
   //   fetchArticles = () => {

@@ -1,11 +1,9 @@
-import { animateScroll as scroll } from 'react-scroll';
 import './Button.css';
 import PropTypes from 'prop-types';
 
 function Button({ onClick }) {
-  scroll = () => {
+  const scroll = () => {
     onClick();
-    scroll.scrollToBottom();
   };
 
   return (
